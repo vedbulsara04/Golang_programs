@@ -12,10 +12,10 @@ var taskItems = []string{task1, task2, task3, task4, task5}
 func main() {
 	fmt.Println("###### Welcome to our ToDo list app ######")
 	fmt.Println()
-	printTasks()
+	printTasks(taskItems)
 }
 
-func printTasks() {
+func printTasks(taskItems []string) {
 	fmt.Println("List of all my To-Dos :")
 	for index, task := range taskItems {
 		fmt.Printf("%d: %s\n", index+1, task)
