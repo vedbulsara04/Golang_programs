@@ -1,1 +1,1 @@
-# Practice of Golang programs ☺️
+# Practice of Golang programs
