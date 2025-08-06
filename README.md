@@ -1,1 +1,1 @@
-# Practice of Golang programs.
+# Practice of Go-lang programs.
