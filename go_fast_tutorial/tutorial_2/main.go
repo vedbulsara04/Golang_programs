@@ -34,8 +34,15 @@ func main(){
 	var myString2 string = "Hello \nWorld"
 	var myString3 string = `Hello
 				World`
+	var myString4 string = "Hello" + "" + "World"
 	fmt.Println(myString)
 	fmt.Println(myString2)
 	fmt.Println(myString3)
-}	
+	fmt.Println(myString4)
+	
+	
+	
+	
+}
+
 
