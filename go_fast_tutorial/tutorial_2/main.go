@@ -3,21 +3,22 @@
 package main
 
 import "fmt"
+import "unicode/utf8"
 
 func main(){
-	// var int
+	// var int:
 	var intNum int16 = 35
 	intNum = intNum + 1
 	fmt.Println("intNum: ", intNum)
 	
-	// float int
+	// var float:
 	var floatNum float32 = 12345678.9
 	var floatNum2 float64 = 12345678.9
 	fmt.Println("Float32: ", floatNum)
 	fmt.Println("Float64: ", floatNum2)
 	
 	
-	// Type casting
+	// Type casting:
 	var floatNum32 float32 = 10.1
 	var intNum32 int32 = 2
 	var result float32 = floatNum32 + float32(intNum32)
@@ -40,7 +41,19 @@ func main(){
 	fmt.Println(myString3)
 	fmt.Println(myString4)
 	
+	// no. of character is a string and not length:
+	fmt.Println(len("test"))
 	
+	// Rune
+	fmt.Println("RuneCountInString: ")
+	fmt.Println(utf8.RuneCountInString("y")
+	
+	var myRune rune = 'a'
+	fmt.Println(myRune)
+	
+	// Bool
+	var myBoolean bool = true
+	fmt.Println(myBoolean)
 	
 	
 }
