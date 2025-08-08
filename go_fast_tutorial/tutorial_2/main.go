@@ -55,7 +55,12 @@ func main(){
 	var myBoolean bool = true
 	fmt.Println(myBoolean)
 	
+	// Multi-variable initialization
+	var var1, var2 = 1, 2
 	
+	// Constants
+	const myConstant string = "value1"
+	// myConstant = "value2" [Error! It's a constant!]
+	const pi float32 = 3.1415
 }
-
 
