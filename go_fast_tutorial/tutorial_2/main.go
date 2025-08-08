@@ -1,4 +1,4 @@
-// 
+// var, const, int, float, string, type-casting, div & modulus, rune, bool.
 
 package main
 
@@ -22,7 +22,7 @@ func main(){
 	var floatNum32 float32 = 10.1
 	var intNum32 int32 = 2
 	var result float32 = floatNum32 + float32(intNum32)
-	fmt.Println(result)
+	fmt.Println("Type-casted Result: ", result)
 	
 	// Division & Modulus
 	var intNum1 int = 3
@@ -46,7 +46,7 @@ func main(){
 	
 	// Rune
 	fmt.Println("RuneCountInString: ")
-	fmt.Println(utf8.RuneCountInString("y")
+	fmt.Println(utf8.RuneCountInString("y"))
 	
 	var myRune rune = 'a'
 	fmt.Println(myRune)
@@ -56,7 +56,7 @@ func main(){
 	fmt.Println(myBoolean)
 	
 	// Multi-variable initialization
-	var var1, var2 = 1, 2
+	// var var1, var2 = 1, 2 [declared but unused]
 	
 	// Constants
 	const myConstant string = "value1"
