@@ -10,8 +10,9 @@ func main(){
 	
 	var numerator int = 11
 	var denominator int = 2
-	var result int = intDivision(numerator, denominator)
-	fmt.Println("intDivision result: ", result)
+	var result, remainder int = intDivision(numerator, denominator)
+	// fmt.Println("intDivision result: ", result)
+	fmt.Printf("The result of integer division is %v with remainder as %v", result, remainder)
 }
 
 func printMe(){
@@ -22,9 +23,10 @@ func printMe2(printValue string){
 	fmt.Println(printValue)
 }
 
-func intDivision(numerator int, denominator int) int{
+func intDivision(numerator int, denominator int) (int, int) {
 	var result int = numerator/denominator
-	return result
+	var remainder int = numerator%denominator
+	return result, remainder
 }
 
 
