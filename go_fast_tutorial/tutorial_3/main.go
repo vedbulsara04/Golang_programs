@@ -11,7 +11,7 @@ func main(){
 	var printValue string = "Hello Ved!"
 	printMe2(printValue)
 	
-	var numerator int = 11
+	var numerator int = 10
 	var denominator int = 0
 	var result, remainder, err = intDivision(numerator, denominator)
 	// check if error encountered:
@@ -27,10 +27,19 @@ func main(){
 	switch{
 		case err != nil:
 			fmt.Printf(err.Error())
-		case remainder == 0
+		case remainder == 0:
 			fmt.Printf("The result of integer division is %v", result)
 		default:
 			fmt.Printf("The result of integer division is %v with remainder as %v", result, remainder)
+	}
+	
+	switch remainder{
+		case 0:
+			fmt.Printf("The division was exact")
+		case 1,2: 
+			fmt.Printf("The division was close")
+		default:
+			fmt.Printf("The division was not close")
 	}
 }
 
@@ -42,7 +51,7 @@ func printMe2(printValue string){
 	fmt.Println(printValue)
 }
 
-func intDivision(numerator int, denominator int) (int, int) {
+func intDivision(numerator int, denominator int) (int, int, error) {
 	var err error
 	if denominator==0{
 		err = errors.New("Cannot divide by zero!")
