@@ -15,13 +15,22 @@ func main(){
 	var denominator int = 0
 	var result, remainder, err = intDivision(numerator, denominator)
 	// check if error encountered:
-	if err!=nil{
+	/* if err!=nil{
 		fmt.Printf(err.Error())
 	}else if remainder == 0{
 		fmt.Printf("The result of integer division is %v", result)
 	}else{
 		// fmt.Println("intDivision result: ", result)
 		fmt.Printf("The result of integer division is %v with remainder as %v", result, remainder)
+	}*/
+	
+	switch{
+		case err != nil:
+			fmt.Printf(err.Error())
+		case remainder == 0
+			fmt.Printf("The result of integer division is %v", result)
+		default:
+			fmt.Printf("The result of integer division is %v with remainder as %v", result, remainder)
 	}
 }
 
