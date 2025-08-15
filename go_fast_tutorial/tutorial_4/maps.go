@@ -37,6 +37,17 @@ func main(){
 		fmt.Printf("Index: %v, Age: %v\n", i,v)
 	}
 	
+	// While loop in go using for loops
+	var i int = 0
+	for i<10{
+		fmt.Println(i)
+		i = i+1
+	}
+		
+	
+	
+	
+	
 	
 	
 	
