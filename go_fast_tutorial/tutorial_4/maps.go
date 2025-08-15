@@ -31,5 +31,15 @@ func main(){
 		fmt.Printf("Name: %v, Age: %v\n", name, age)
 	}
 	
+	// loop over arrays and slices, i=index | v=value
+	var intArr [3]int32 = [3]int32{2,3,4}	
+	for i, v := range intArr{
+		fmt.Printf("Index: %v, Age: %v\n", i,v)
+	}
+	
+	
+	
+	
+	 
 }
 
