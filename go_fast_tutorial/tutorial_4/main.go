@@ -31,7 +31,7 @@ func main(){
 	// 3: specify length of slice, 8: specify capacity of slice.
 	// By default capacity will be length of the slice
 	fmt.Println(intSlice3)
-	fmt.Printf()
+	fmt.Printf("For intSlice3, the length is %v and capacity is %v\n", len(intSlice3), cap(intSlice3))
 	
 	
 }
