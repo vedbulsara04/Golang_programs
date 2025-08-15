@@ -25,5 +25,9 @@ func main(){
 	var intSlice2 []int32 = []int32{8,9}
 	intSlice = append(intSlice, intSlice2...)
 	fmt.Println(intSlice)
+	
+	// Another way to create Slice using make function
+	
+	
 }
 
