@@ -38,6 +38,7 @@ func main(){
 	}
 	
 	// While loop in go using for loops
+	
 	/*
 	var i int = 0
 	for i<10{
@@ -46,6 +47,8 @@ func main(){
 	}
 	fmt.Println()
 	*/
+	
+	/*
 	var i int = 0
 	for{
 		if i >= 10{
@@ -53,6 +56,11 @@ func main(){
 		}
 		fmt.Println(i)
 		i = i + 1
-	}			 
+	}
+	*/
+	
+	for i:=0; i<10; i++ {
+		fmt.Println(i)
+	}		 
 }
 
