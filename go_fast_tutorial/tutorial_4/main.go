@@ -19,7 +19,11 @@ func main(){
 	
 	intSlice = append(intSlice, 7)
 	fmt.Println(intSlice)
-	fmt.Printf("The length is %v with capacity %v", len(intSlice), cap(intSlice))
+	fmt.Printf("The length is %v with capacity %v\n", len(intSlice), cap(intSlice))
 	
+	// Append multiple values with spread operator
+	var intSlice2 []int32 = []int32{8,9}
+	intSlice = append(intSlice, intSlice2...)
+	fmt.Println(intSlice)
 }
 
