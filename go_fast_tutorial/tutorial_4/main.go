@@ -27,6 +27,11 @@ func main(){
 	fmt.Println(intSlice)
 	
 	// Another way to create Slice using make function
+	var intSlice3 []int32 = make([]int32, 3, 8)
+	// 3: specify length of slice, 8: specify capacity of slice.
+	// By default capacity will be length of the slice
+	fmt.Println(intSlice3)
+	fmt.Printf()
 	
 	
 }
