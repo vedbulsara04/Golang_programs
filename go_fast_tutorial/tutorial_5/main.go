@@ -29,8 +29,16 @@ func main(){
 	}
 	fmt.Printf("\n%v\n", concatStr)
 	
-	//string building using Go's strings package
+	//string building using Go's strings package | WriteString method
+	var strSlice2 = []string{"V","e","t","t","e","l","-","5"}
+	var strBuilder strings.Builder
 	
+	for i := range strSlice2{
+		strBuilder.WriteString(strSlice2[i])
+	}
+	
+	var concatStr2 = strBuilder.String()
+	fmt.Printf("\n%v\n", concatStr2)
 	
 }
 
