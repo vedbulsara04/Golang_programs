@@ -34,7 +34,7 @@ func main(){
 	// loop over arrays and slices, i=index | v=value
 	var intArr [3]int32 = [3]int32{2,3,4}	
 	for i, v := range intArr{
-		fmt.Printf("Index: %v, Age: %v\n", i,v)
+		fmt.Printf("Index: %v, Value: %v\n", i,v)
 	}
 	
 	// While loop in go using for loops
