@@ -12,6 +12,7 @@ func main(){
 		fmt.Println(i, v)
 	}
 	
+	fmt.Printf("\nThe lenght of 'myString' is: %v\n", len(myString))
 	
 }
 
