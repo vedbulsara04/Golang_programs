@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main(){
+
+	// string
 	var myString = "résumé"
 	var indexed = myString[0]
 	
@@ -14,5 +16,8 @@ func main(){
 	
 	fmt.Printf("\nThe lenght of 'myString' is: %v\n", len(myString))
 	
+	// runes
+	var myRune = 'a'
+	fmt.Printf("\nmyRune = %v\n", myRune)
 }
 
