@@ -9,7 +9,14 @@ type icEngine struct{
 }
 
 func main(){
-	var myICE icEngine = icEngine{kml:25, litres:15}
+	//var myICE icEngine
+	//var myICE icEngine = icEngine{kml:25, litres:15}
+	//var myICE icEngine = icEngine{25, 15}
+	var myICE icEngine
+	myICE.kml = 20
+	myICE.litres = 9
+	
 	fmt.Println(myICE.kml, myICE.litres)	
+	
 }
 
