@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "strings"
 
 func main(){
 
@@ -19,5 +20,17 @@ func main(){
 	// runes
 	var myRune = 'a'
 	fmt.Printf("\nmyRune = %v\n", myRune)
+
+	// string building using concatenation
+	var strSlice= []string{"H","a","m","i","l","t","o","n","-","4","4"}
+	var concatStr = ""
+	for i := range strSlice{
+		concatStr += strSlice[i]
+	}
+	fmt.Printf("\n%v\n", concatStr)
+	
+	//string building using Go's strings package
+	
+	
 }
 
