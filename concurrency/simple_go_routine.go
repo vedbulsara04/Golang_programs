@@ -19,6 +19,6 @@ func main() {
 	// Run this in the main thread
 	printMessage("From main function")
 
-	// Give goroutine time to finish before program exits
+	// Give goroutine some time to finish before program exits
 	time.Sleep(3 * time.Second)
 }
