@@ -24,10 +24,16 @@ type engine interface{
 	kmsleft() uint16
 }
 
+func canMakeIt(e engine, kms uint16){
+	if kms<=e.kmsleft(){
+		fmt.Println("You can make it!")
+	}else{
+		fmt.Println("Need to fuel up!")
+	}
+}
 
 func main(){
 	var myICE icEngine = icEngine{25, 15}
-
-	fmt.Printf("Total kms left in tank: %v", myICE.kmsleft()) 
+	canMakeIt(myICE, 120) 
 }
 
