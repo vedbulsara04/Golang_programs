@@ -22,3 +22,4 @@ func main(){
 	fmt.Printf("The value p points to is: %v\n", *p) // prints: 1
 	fmt.Printf("The value of i is: %v\n", i)        // prints: 1
 }
+
