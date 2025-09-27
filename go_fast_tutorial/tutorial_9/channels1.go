@@ -7,12 +7,19 @@ import (
 func main(){
 	var c = make(chan int)
 	go process(c)
-	fmt.Println(<- c)
+	for i:=0; i<5; i++{
+		fmt.Println(<- c)
+	}
 }
 
+/*
+func process(c chan int){
+	c <- 123
+}
+*/
 
 func process(c chan int){
-	for i:= 0; i<5; i++{
+	for i:=0; i<5; i++{
 		c <- i		
 	}
 }
