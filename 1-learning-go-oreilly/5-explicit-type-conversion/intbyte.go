@@ -7,9 +7,8 @@ func main(){
 	var y byte = 100 //byte = uint8
 	
 	var sum1 byte = byte(x) + y
-	var sum2 int = int(x) + y
+	var sum2 int = x + int(y)
 	
-	fmt.Printf()
-
+	fmt.Printf("int to byte: %v, byte to int: %v", sum1, sum2)
 }
 
