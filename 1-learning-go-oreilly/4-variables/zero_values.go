@@ -15,4 +15,4 @@ func main(){
 	fmt.Printf("string: %v\n", s)
 	fmt.Printf("pointer: %v\n", p)
 }
-
+	
