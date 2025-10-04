@@ -1,3 +1,5 @@
+// Local Scope
+
 package main
 
 import "fmt"
