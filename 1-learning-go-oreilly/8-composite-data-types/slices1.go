@@ -21,5 +21,11 @@ func main(){
 	// Appending elements
 	s3 = append(s3, 4, 5, 6)
 	fmt.Printf("Appended s3: %v\n", s3)
+	
+	// Slicing operations
+	arr := [5]int{1, 2, 3, 4, 5}
+	fmt.Printf("arr : %v\n", arr)
+	slice1 := arr[1:4] // [2 3 4] (indices 1, 2, 3)
+	slice2 := arr[:3] //
 }
 
