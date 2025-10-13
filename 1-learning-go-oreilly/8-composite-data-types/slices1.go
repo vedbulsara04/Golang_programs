@@ -25,7 +25,30 @@ func main(){
 	// Slicing operations
 	arr := [5]int{1, 2, 3, 4, 5}
 	fmt.Printf("arr : %v\n", arr)
+	
 	slice1 := arr[1:4] // [2 3 4] (indices 1, 2, 3)
-	slice2 := arr[:3] //
-}
+	fmt.Printf("slice1: %v\n", slice1)
+	
+	slice2 := arr[:3] // [1 2 3] (start to 3)
+	fmt.Printf("slice2: %v\n", slice2)
+	
+	slice3 := arr[2:] // [3 4 5] (2 to end)
+	fmt.Printf("slice3: %v\n", slice3)
 
+	slice4 := arr[:] // entire array
+	fmt.Printf("slice4: %v\n", slice4)
+
+	// Length and capacity
+	fmt.Printf("Length: %d, Capacity: %d\n", len(slice1), cap(slice1))
+
+	// slices share underlying array
+	slice1[0] = 999
+	fmt.Println(arr) // [1 999 3 4 5] - array modified
+
+	// Copying slices
+	source := []int{1, 2, 3}
+	dest := make([]int, len(source))
+	copy(dest, source)
+	dest[0] = 999
+	fmt.Printf("source: %v", source) // [1 2 3] - unchanged 
+}
