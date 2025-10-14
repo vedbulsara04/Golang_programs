@@ -16,4 +16,11 @@ func main(){
 		"Bob": 30,
 	}
 	fmt.Printf("m3: %v\n", m3)
+	
+	// using make
+	m4 := make(map[string]int)
+	m4["Charlie"] = 35
+	fmt.Printf("m4: %v\n", m4)
+
 }
+		
