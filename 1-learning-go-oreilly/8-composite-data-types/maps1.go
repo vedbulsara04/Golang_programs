@@ -8,9 +8,12 @@ func main(){
 	
 	// map declaration
 	var m1 map[string]int	// nil map (can't add elements)
+	fmt.Printf("m1: %v\n", m1)
 	m2 := map[string]int{}	// empty map
-	m2 := map[string]int{
+ 	fmt.Printf("m2: %v\n", m2)
+	m3 := map[string]int{
 		"Alice": 25,
 		"Bob": 30,
 	}
+	fmt.Printf("m3: %v\n", m3)
 }
