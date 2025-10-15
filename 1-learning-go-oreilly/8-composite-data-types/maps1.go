@@ -26,7 +26,7 @@ func main(){
 	m3["Charlie"] = 35	// adding
 	fmt.Printf("m3: %v\n", m3)
 	m3["Alice"] = 26	// updating
-	fmt.Printf("m3: %v\n"e, m3)
+	fmt.Printf("m3: %v\n", m3)
 	
 	// accessing elements
 	age := m3["Alice"]
@@ -35,9 +35,9 @@ func main(){
 	// check if key exists
 	age, exists := m3["Eve"]
 	if exists {
-		fmt.Println("\nAge: ", age)
+		fmt.Println("Age: ", age)
 	} else {
-		fmt.Println("\nKey not found!)
+		fmt.Println("Key not found!")
 	}
 	
 	// deleting elements
