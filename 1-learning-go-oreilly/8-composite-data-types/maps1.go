@@ -41,5 +41,7 @@ func main(){
 	}
 	
 	// deleting elements
+	delete(m3, "Bob")
+	fmt.Printf("m3: %v\n", m3)
 }
 		
