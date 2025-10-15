@@ -35,13 +35,28 @@ func main(){
 	// check if key exists
 	age, exists := m3["Eve"]
 	if exists {
-		fmt.Println("Age: ", age)
+		fmt.Println("\nAge: ", age)
 	} else {
-		fmt.Println("Key not found!)
+		fmt.Println("\nKey not found!)
 	}
 	
 	// deleting elements
 	delete(m3, "Bob")
 	fmt.Printf("m3: %v\n", m3)
+	
+	// iterating over maps (the order is random!)
+	for key, value := range m3 {
+		fmt.Printf("%s: %d\n", key, value)
+	}
+	
+	// Map length
+	fmt.Println("Size of map m3: ", len(m3))
+	
+	// Maps are reference types
+	// Both m3 and m5 point to the same map in memory.
+	m5 := m3
+	m5["Alice"] = 100
+	fmt.Println(m3["Alice"]) // 100 (both point to the same map)
+	
 }
-		
+
