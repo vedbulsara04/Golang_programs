@@ -13,7 +13,7 @@ type Person struct {
 }
 
 type Employee struct {
-	Person string // (Go's way of composition: [embedded Person struct])
+	PersonInfo Person // (Go's way of composition: [embedded Person struct])
 	EmployeeID int
 	Department string
 }
@@ -34,14 +34,15 @@ func main(){
 		Age: 30,
 		email: "john@example.com",
 	}
+	fmt.Printf("p2: %v\n", p2)
 	
 	// 3. Literal with Positional values (not recommended)
 	p3 := Person {"Jane", "Smith", 28, "jane@example.com"}
-	fmt.Printf("p3: %v", p3)
+	fmt.Printf("p3: %v\n", p3)
 	
 	// 4. Partial initialization
 	p4 := Person{FirstName: "Alice", Age: 25}
-	fmt.Printf("p4: %v", p4)
+	fmt.Printf("p4: %v\n", p4)
 
 	// Accessing fields
 	fmt.Printf(p2.FirstName)
@@ -54,7 +55,7 @@ func main(){
 	
 	// Embedded Structs
 	e1 := Employee{
-		Person: Person{
+		PersonInfo: Person{
 			FirstName: "Charlie",
 			LastName: "Brown",
 			Age: 35,
@@ -64,8 +65,7 @@ func main(){
 	}
 	
 	// Accessing embedded fields
-	fmt.Println(e1.FirstName) // Access through field promotion (shorter syntax)
-	fmt.Println(e1.Person.FirstName) // Access through explicit path
+	fmt.Println(e1.PersonInfo.FirstName) // Access through explicit path
 	
 	// Anonymous structs
 	config := struct {
