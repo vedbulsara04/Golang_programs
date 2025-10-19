@@ -27,7 +27,7 @@ func main(){
 	fmt.Println(p1)
 	
 	
-	// 2. Literal with field names
+	// 2. Literal with field names (recommended method) [struct literal syntax]
 	p2 := Person {
 		FirsName: "John",
 		LastName: "Doe",
@@ -40,4 +40,8 @@ func main(){
 	
 	// 4. Partial initialization
 	p4 := Person{FirstName: "Alice", Age: 25}
+
+	// Accessing fields
+	fmt.Printf(p2.FirstName)
+	p2.Age = 31	// updates p2 age.	
 }
