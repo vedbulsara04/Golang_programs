@@ -66,4 +66,15 @@ func main(){
 	// Accessing embedded fields
 	fmt.Println(e1.FirstName) // Access through field promotion (shorter syntax)
 	fmt.Println(e1.Person.FirstName) // Access through explicit path
+	
+	// Anonymous structs
+	config := struct {
+		Host string
+		Port int
+	}{
+	
+		Host: "localhost",
+		Port: 8000,
+	}
+	fmt.Println(config)
 }
