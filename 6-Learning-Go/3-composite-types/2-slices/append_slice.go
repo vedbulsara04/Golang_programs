@@ -13,6 +13,11 @@ func main(){
 	y = append(y, 4)
 	fmt.Println(y)
 	
+	// append more than one value to a slice
+	var b = []int{70, 80}
+	b = append(b, 90, 100, 110)
+	fmt.Println(b)
+	
 	// append one slice to another using ... operator
 	
 	var a = []int{10, 20, 30}
